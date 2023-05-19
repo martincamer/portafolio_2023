@@ -1,8 +1,7 @@
+import { motion } from 'framer-motion';
 import Image from 'next/image';
 import image from '../../../assets/martin.jpg';
 import Link from 'next/link';
-import { motion } from 'framer-motion';
-import React from 'react';
 
 function Footer() {
 	return (

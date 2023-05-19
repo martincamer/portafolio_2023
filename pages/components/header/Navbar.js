@@ -1,10 +1,3 @@
-// import {
-// 	DribbbleIcon,
-// 	GithubIcon,
-// 	LinkedInIcon,
-// 	PinterestIcon,
-// 	TwitterIcon,
-// } from '@/pages/helpers/icon';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { motion } from 'framer-motion';
