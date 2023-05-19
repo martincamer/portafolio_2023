@@ -1,8 +1,8 @@
-import { GithubIcon } from '../helpers/icon';
 import Link from 'next/link';
 import Image from 'next/image';
 import Layout from '../components/Layout';
 import { useEffect, useState } from 'react';
+import { SiGithub } from 'react-icons/si';
 // import articles from '../articles';
 
 function Projects() {
@@ -96,8 +96,10 @@ function Projects() {
 											</Link>
 										</div>
 										<div>
-											<GithubIcon
-												className={'w-[40px] h-[40px] max-md:w-[30px]'}
+											<SiGithub
+												className={
+													'w-[40px] h-[40px] max-md:w-[30px] text-secondary'
+												}
 											/>
 										</div>
 									</div>
