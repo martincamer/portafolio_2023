@@ -3,6 +3,7 @@ import Layout from './components/Layout';
 import MySliderHabilitys from './components/sliders/MySliderHabilitys';
 import Experencia from './components/about/Experencia';
 import Educacion from './components/about/Educacion';
+import Link from 'next/link';
 
 function about() {
 	return (
@@ -56,7 +57,13 @@ function about() {
 						</div>
 
 						<div className="flex items-center gap-2 mb-12 w-fit h-12 border-b-2 border-fourty hover:border-terciary transition-all duration-200 cursor-pointer group text-secondary mt-5">
-							<p className={'text-sm lg:text-base'}>MÁS SOBRE MÍ</p>
+							<Link
+								className={'text-sm lg:text-base'}
+								href={'/Martin_Camer_CV.pdf'}
+								target="_blank"
+							>
+								RESUME
+							</Link>
 							<svg
 								stroke="currentColor"
 								fill="currentColor"
