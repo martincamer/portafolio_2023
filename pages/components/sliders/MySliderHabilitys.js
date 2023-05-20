@@ -134,17 +134,17 @@ function MySliderHabilitys() {
 							'flex flex-col justify-center items-center gap-2 bg-six h-[100%] w-[100%] md:w-full md:h-full rounded-3xl py-12 px-9 max-md:py-8 max-md:px-3'
 						}
 					>
-						<div className="flex items-center justify-center text-3xl text-secondary bg-terciary rounded-full md:w-20 max-md:h-[4rem] max-md:w-[4rem] md:h-20">
+						<div className="flex items-center text-center mx-auto justify-center text-3xl text-secondary bg-terciary rounded-full md:w-20 max-md:h-[4rem] max-md:w-[4rem] md:h-20">
 							{index.image}
 						</div>
 						<h3
 							className={
-								'font-bold mt-6 mb-3 md:text-2xl max-md:text-1xl text-secondary'
+								'font-bold mt-6 mb-3 md:text-2xl max-md:text-1xl text-secondary text-center mx-auto'
 							}
 						>
 							{index.title}
 						</h3>
-						<div className="h-1.5 w-14 max-md:h-0.5 bg-secondary"></div>
+						<div className="h-1.5 w-14 max-md:h-0.5 bg-secondary text-center mx-auto"></div>
 					</div>
 				))}
 			</Slider>
