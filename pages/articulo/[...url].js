@@ -1,19 +1,23 @@
+// import Link from 'next/link';
+// import AnimatedText from '../components/AnimatedText';
 import { useState, useEffect } from 'react';
-
-import Link from 'next/link';
-import AnimatedText from '../components/AnimatedText';
 import Layout from '../components/Layout';
 import Image from 'next/image';
+import { useRouter } from 'next/router';
 
 function articles() {
 	const [blog, setBlog] = useState([]);
+	const router = useRouter();
 
 	useEffect(() => {
-		async function loadData() {
-			const url = await fetch(`${process.env.BASE_URL}/blogs?populate=image`);
+		async function loadData(url) {
+			url = router.query.url;
+			const data = await fetch(
+				`${process.env.BASE_URL}/blogs?filters[url]=${url}&populate=image`
+			);
 
-			const res = await url.json();
-			console.log(res.data);
+			const res = await data.json();
+			// console.log(res.data);
 
 			setBlog(res.data);
 		}
@@ -28,7 +32,7 @@ function articles() {
 					'container mx-auto max-md:px-4 w-full max-md:h-full  py-[80px] max-md:py-[60px]'
 				}
 			>
-				<div>
+				<div className="">
 					{blog.map(articulo => (
 						<div
 							className={'flex flex-col justify-center items-center gap-8'}
@@ -40,7 +44,8 @@ function articles() {
 								alt=""
 								className={'rounded-lg'}
 								src={
-									articulo.attributes.image.data[0].attributes.formats.large.url
+									articulo.attributes.image.data[0].attributes.formats.medium
+										.url
 								}
 							/>
 							<p className={'text-secondary font-semibold text-2xl'}>

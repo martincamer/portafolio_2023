@@ -13,7 +13,7 @@ function Proyectos() {
 			);
 
 			const res = await url.json();
-			console.log(res.data);
+			// console.log(res.data);
 
 			setArticulos(res.data);
 		}

@@ -13,7 +13,7 @@ function articles() {
 			const url = await fetch(`${process.env.BASE_URL}/blogs?populate=image`);
 
 			const res = await url.json();
-			console.log(res.data);
+			// console.log(res.data);
 
 			setBlog(res.data);
 		}
@@ -49,12 +49,12 @@ function articles() {
 					</div>
 				</div>
 
-				<div>
+				<div className="grid grid-cols-4 max-md:grid-cols-2 gap-4">
 					{blog.map(articulo => (
-						<Link href={`articulo/${articulo.attributes.url}`}>
+						<Link href={`/articulo/${articulo.attributes.url}`}>
 							<div
 								className={
-									'max-md:w-full bg-fourty p-4 rounded-lg hover:scale-[1.06] hover:bg-terciary transition-all duration-300 ease-out w-[20%] flex flex-col gap-2'
+									'w-full bg-fourty p-4 rounded-lg hover:scale-[1.06] hover:bg-terciary transition-all duration-300 ease-out  flex flex-col gap-2 max-md:h-full'
 								}
 								key={articulo.id}
 							>

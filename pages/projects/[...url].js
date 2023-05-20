@@ -1,21 +1,24 @@
+// import articles from '../articles';
 import Link from 'next/link';
 import Image from 'next/image';
 import Layout from '../components/Layout';
 import { useEffect, useState } from 'react';
 import { SiGithub } from 'react-icons/si';
-// import articles from '../articles';
+import { useRouter } from 'next/router';
 
 function Projects() {
 	const [articulos, setArticulos] = useState([]);
+	const router = useRouter();
 
 	useEffect(() => {
-		async function loadData() {
-			const url = await fetch(
-				`${process.env.BASE_URL}/proyectos?populate=imagen`
+		async function loadData(url) {
+			url = router.query.url;
+			const data = await fetch(
+				`${process.env.BASE_URL}/proyectos?filters[url]=${url}&populate=imagen`
 			);
 
-			const res = await url.json();
-			console.log(res.data);
+			const res = await data.json();
+			// console.log(res.data);
 
 			setArticulos(res.data);
 		}
