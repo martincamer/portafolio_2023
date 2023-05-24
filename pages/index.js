@@ -113,7 +113,7 @@ export default function Home() {
 					src={image}
 					alt=""
 					className={
-						' md:absolute md:bottom-[0] z-0 md:left-[19%] md:h-[430px] md:w-[430px] w-full h-full rounded-t-[300px] shadow-terciary'
+						' md:absolute md:bottom-[0] z-0 md:left-[5%] md:h-[400px] md:w-[400px] w-full h-full rounded-t-[300px] shadow-terciary'
 					}
 				/>
 			</div>

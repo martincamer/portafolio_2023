@@ -18,7 +18,7 @@ function Projects() {
 			);
 
 			const res = await data.json();
-			// console.log(res.data);
+			console.log(res.data);
 
 			setArticulos(res.data);
 		}
@@ -111,12 +111,12 @@ function Projects() {
 									<Image
 										src={
 											articulo.attributes.imagen.data[0].attributes.formats
-												.large.url
+												.medium.url
 										}
-										height={400}
-										width={1000}
+										height={300}
+										width={300}
 										className={
-											'rounded-lg shadow-lg shadow-fourty max-md:h-[250px] object-cover'
+											'rounded-lg shadow-lg shadow-fourty h-[500px] w-[400px] max-md:h-[300px] max-md:w-[300px] object-cover'
 										}
 										alt={''}
 									/>

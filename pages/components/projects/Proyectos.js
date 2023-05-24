@@ -8,14 +8,15 @@ function Proyectos() {
 
 	useEffect(() => {
 		async function loadData() {
-			const url = await fetch(
+			const datos = await fetch(
 				`${process.env.BASE_URL}/proyectos?populate=imagen`
 			);
 
-			const res = await url.json();
+			const res = await datos.json();
 			// console.log(res.data);
 
 			setArticulos(res.data);
+			console.log(res.data);
 		}
 
 		loadData();
@@ -27,15 +28,20 @@ function Proyectos() {
 				<Link href={`projects/${articulo.attributes.url}`}>
 					<motion.div
 						key={articulo.id}
-						className={'bg-fourty rounded-lg shadow-lg shadow-six'}
+						className={
+							'bg-fourty rounded-lg shadow-lg shadow-six h-full flex flex-col justify-center items-center w-full'
+						}
 						whileHover={{ scale: 1.05 }}
 						transition={{ duration: 0.2 }}
 						// whileHover={{  }}
 					>
 						<Image
 							width={300}
-							height={400}
-							className={'w-full rounded-t-lg'}
+							height={150}
+							priority={1}
+							className={
+								'rounded-t-lg h-[250px] w-full object-cover flex justify-center items-center'
+							}
 							alt=""
 							src={
 								articulo.attributes.imagen.data[0].attributes.formats.medium.url
