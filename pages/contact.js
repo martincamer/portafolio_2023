@@ -18,48 +18,41 @@ function contact() {
 		event.preventDefault();
 
 		if ([name, last_name, email].includes('')) {
-			setError('Todos los campos son obligatorios');
-		} else {
-			setError(false);
-		}
+			if ([name, last_name, email].includes('')) {
+				setError('Todos los campos son obligatorios');
+			}
 
-		if ([name].includes('')) {
-			setErrorName('El nombre es obligatorio');
-		} else {
-			setErrorName(false);
-		}
+			if ([name].includes('')) {
+				setErrorName('El nombre es obligatorio');
+			}
 
-		if ([last_name].includes('')) {
-			setErrorLastName('El apellido es obligatorio');
-		} else {
-			setErrorLastName(false);
-		}
+			if ([last_name].includes('')) {
+				setErrorLastName('El apellido es obligatorio');
+			}
 
-		if ([email].includes('')) {
-			setErrorEmail('El email es obligatorio');
+			if ([email].includes('')) {
+				setErrorEmail('El email es obligatorio');
+			}
 		} else {
-			setErrorEmail(false);
-		}
-
-		axios
-			.post(`${process.env.BASE_URL}/formularios`, {
+			axios.post(`${process.env.BASE_URL}/formularios`, {
 				data: {
 					name: name,
 					lastname: last_name,
 					email: email,
 					message: message,
 				},
-			})
-			.then(response => {
-				console.log(response);
 			});
 
-		setName('');
-		setEmail('');
-		setMessage('');
-		setLastName('');
-
-		event.target.reset();
+			setName('');
+			setEmail('');
+			setMessage('');
+			setLastName('');
+			setError(false);
+			setErrorName(false);
+			setErrorLastName(false);
+			setErrorEmail(false);
+			event.target.reset();
+		}
 	};
 
 	return (

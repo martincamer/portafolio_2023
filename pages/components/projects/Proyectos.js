@@ -8,9 +8,7 @@ function Proyectos() {
 
 	useEffect(() => {
 		async function loadData() {
-			const datos = await fetch(
-				`${process.env.BASE_URL}/proyectos?populate=imagen`
-			);
+			const datos = await fetch(`${process.env.BASE_URL}/proyectos?populate=*`);
 
 			const res = await datos.json();
 			// console.log(res.data);
@@ -23,7 +21,11 @@ function Proyectos() {
 	}, []);
 
 	return (
-		<div className={'grid grid-cols-5 max-md:grid-cols-1 max-md:pb-[50px]'}>
+		<div
+			className={
+				'grid grid-cols-5 max-md:grid-cols-1 gap-x-10 max-md:pb-[50px]'
+			}
+		>
 			{articulos.map(articulo => (
 				<Link href={`projects/${articulo.attributes.url}`}>
 					<motion.div
@@ -43,9 +45,7 @@ function Proyectos() {
 								'rounded-t-lg h-[250px] w-full object-cover flex justify-center items-center'
 							}
 							alt=""
-							src={
-								articulo.attributes.imagen.data[0].attributes.formats.medium.url
-							}
+							src={articulo.attributes.imagen.data[0].attributes.url}
 						/>
 						<div className={'p-3 pb-5'}>
 							<h2 className={'text-secondary font-bold text-2xl'}>
@@ -54,6 +54,18 @@ function Proyectos() {
 							<h2 className={'text-six font-bold line-clamp-4'}>
 								{articulo.attributes.descripcion}
 							</h2>
+						</div>
+
+						<div className="flex gap-x-2 py-3">
+							{articulo.attributes.icons.data.map((item, id) => {
+								return (
+									<Image
+										src={item.attributes.url}
+										width={35}
+										height={35}
+									/>
+								);
+							})}
 						</div>
 					</motion.div>
 				</Link>

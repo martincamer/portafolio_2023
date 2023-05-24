@@ -107,17 +107,16 @@ function Projects() {
 										</div>
 									</div>
 								</div>
-								<div className={'w-full flex justify-center'}>
+								<div
+									className={
+										'flex justify-center border border-solid border-secondary p-5 rounded-lg mx-auto'
+									}
+								>
 									<Image
-										src={
-											articulo.attributes.imagen.data[0].attributes.formats
-												.medium.url
-										}
+										src={articulo.attributes.imagen.data[0].attributes.url}
 										height={300}
 										width={300}
-										className={
-											'rounded-lg shadow-lg shadow-fourty h-[500px] w-[400px] max-md:h-[300px] max-md:w-[300px] object-cover'
-										}
+										className={'rounded-lg w-[600px] h-full'}
 										alt={''}
 									/>
 								</div>
