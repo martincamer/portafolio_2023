@@ -2,9 +2,9 @@ import Head from 'next/head';
 import Navbar from './header/Navbar';
 import Footer from './footer/Footer';
 
-function Layout({ children, pagina }) {
+function Layout({ children, pagina, className = '' }) {
 	return (
-		<div className={'bg-primary'}>
+		<div className={className}>
 			<Navbar />
 			<Head>
 				<link

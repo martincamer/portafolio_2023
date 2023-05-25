@@ -5,12 +5,8 @@ import Link from 'next/link';
 
 function Footer() {
 	return (
-		<footer
-			className={
-				'bg-five pt-20 pb-10  max-md:pt-20 max-md:pb-10 border-t-2 border-t-fourty'
-			}
-		>
-			<div className="flex max-md:flex-col justify-center items-center container mx-auto md:gap-32 max-md:gap-16 border-b-2 border-b-fourty">
+		<footer className={'bg-seventy pt-20 pb-10  max-md:pt-20 max-md:pb-10'}>
+			<div className="flex max-md:flex-col justify-center items-center container mx-auto md:gap-32 max-md:gap-16 border-b-2 border-b-six/50">
 				<div className={'flex  items-center gap-10 max-md:gap-5'}>
 					<div className="relative flex bg-gray-0 h-24 w-24 lg:h-32 lg:w-32 rounded-full overflow-hidden">
 						<Image
@@ -19,12 +15,12 @@ function Footer() {
 						/>
 					</div>
 					<div className="flex flex-col gap-4">
-						<p class="font-extrabold text-xl lg:text-6xl text-secondary">
+						<p class="font-extrabold text-2xl lg:text-6xl text-six">
 							<font styles="vertical-align: inherit;">
 								<font styles="vertical-align: inherit;">Martin Camer</font>
 							</font>
 						</p>
-						<p className="text-2xl font-semibold text-terciary">
+						<p className="text-2xl font-semibold text-ninety">
 							Developer Full Stack
 						</p>
 						<div className="flex gap-4">
@@ -39,7 +35,7 @@ function Footer() {
 									stroke-width="0"
 									version="1.1"
 									viewBox="0 0 17 17"
-									className="w-10 h-10 max-md:h-8 hover:-translate-y-2 transition-all duration-200 text-fourty hover:text-secondary"
+									className="w-10 h-10 max-md:h-6 hover:-translate-y-2 transition-all duration-200 text-six hover:text-ninety"
 									height="1em"
 									width="1em"
 									xmlns="http://www.w3.org/2000/svg"
@@ -59,7 +55,7 @@ function Footer() {
 									fill="currentColor"
 									stroke-width="0"
 									viewBox="0 0 496 512"
-									class="w-10 h-10 max-md:h-8 hover:-translate-y-2 transition-all duration-200 text-fourty hover:text-secondary"
+									class="w-10 h-10 max-md:h-6 hover:-translate-y-2 transition-all duration-200 text-six hover:text-ninety"
 									height="1em"
 									width="1em"
 									xmlns="http://www.w3.org/2000/svg"
@@ -70,9 +66,9 @@ function Footer() {
 						</div>
 					</div>
 				</div>
-				<div className="flex flex-col gap-3 max-md:gap-8">
+				<div className="flex flex-col gap-3 max-md:gap-6">
 					<div className="flex gap-2 items-center">
-						<h2 className="font-bold text-secondary text-4xl max-md:text-3xl">
+						<h2 className="font-bold text-six text-4xl max-md:text-[22px]">
 							Ponerse en contacto
 						</h2>
 						<svg
@@ -80,7 +76,7 @@ function Footer() {
 							fill="currentColor"
 							stroke-width="0"
 							viewBox="0 0 24 24"
-							class="w-10 h-10 lg:w-14 lg:h-14 text-terciary"
+							class="w-10 h-10 lg:w-14 lg:h-14 text-ninety"
 							height="1em"
 							width="1em"
 							xmlns="http://www.w3.org/2000/svg"
@@ -88,15 +84,17 @@ function Footer() {
 							<path d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z"></path>
 						</svg>
 					</div>
-					<div className="flex flex-col gap-2">
+					<div className="flex flex-col gap-1">
 						<div>
-							<p className="font-semibold text-secondary text-2xl max-md:text-xl">
+							<p className="font-semibold text-six text-2xl max-md:text-[16px]">
 								ENVÍEME UN CORREO ELECTRÓNICO:
 							</p>
-							<div className="flex items-center gap-2 mb-12 w-fit h-12 border-b-2 border-fourty hover:border-terciary transition-all duration-200 cursor-pointer group text-secondary mt-5">
+							<div className="flex items-center gap-2 mb-12 w-fit h-12 border-b-2 border-five hover:border-six transition-all duration-200 cursor-pointer group text-secondary mt-5">
 								<Link
 									href={'mailto:martincamer011@gmail.com'}
-									className={'text-2xl max-md:text-xl font-semibold'}
+									className={
+										'text-2xl max-md:text-xl font-semibold text-ninety'
+									}
 								>
 									martincamer011@gmail.com
 								</Link>
@@ -105,7 +103,7 @@ function Footer() {
 									fill="currentColor"
 									stroke-width="0"
 									viewBox="0 0 24 24"
-									class="w-7 h-7 transition-all duration-200 group-hover:translate-x-2 group-hover:text-terciary"
+									class="w-7 h-7 transition-all duration-200 group-hover:translate-x-2 text-ninety group-hover:text-six"
 									height="1em"
 									width="1em"
 									xmlns="http://www.w3.org/2000/svg"
@@ -115,15 +113,15 @@ function Footer() {
 							</div>
 						</div>
 						<div>
-							<p className="font-semibold text-secondary text-2xl max-md:text-xl">
+							<p className="font-semibold text-six text-2xl max-md:text-[16px]">
 								LLAMAME:
 							</p>
-							<div className="flex items-center gap-2 mb-12 w-fit h-12 border-b-2 border-fourty hover:border-terciary transition-all duration-200 cursor-pointer group text-secondary mt-5">
+							<div className="flex items-center gap-2 mb-12 w-fit h-12 border-b-2 border-five hover:border-six transition-all duration-200 cursor-pointer group text-ninety mt-5">
 								<Link
 									href={
 										'https://api.whatsapp.com/send?phone=3462693961&text=MENSAJE'
 									}
-									className={'text-2xl font-semibold max-md:text-xl'}
+									className={'text-2xl font-semibold max-md:text-[16px]'}
 								>
 									(+54)3462693961
 								</Link>
@@ -132,7 +130,7 @@ function Footer() {
 									fill="currentColor"
 									stroke-width="0"
 									viewBox="0 0 24 24"
-									class="w-7 h-7 transition-all duration-200 group-hover:translate-x-2 group-hover:text-terciary"
+									class="w-7 h-7 transition-all duration-200 group-hover:translate-x-2 group-hover:text-six"
 									height="1em"
 									width="1em"
 									xmlns="http://www.w3.org/2000/svg"
@@ -147,38 +145,38 @@ function Footer() {
 			<div className="container mx-auto pt-10 flex flex-col items-center">
 				<ul className="flex gap-12 max-md:gap-3">
 					<Link
-						className="font-semibold text-secondary text-2xl max-md:text-lg hover:text-terciary transition-all duration-300 ease-out"
+						className="font-semibold text-six text-2xl max-md:text-[16px] hover:text-ninety transition-all duration-300 ease-out"
 						href={'/home'}
 					>
 						Home
 					</Link>
 					<Link
-						className="font-semibold text-secondary text-2xl max-md:text-lg hover:text-terciary transition-all duration-300 ease-out"
+						className="font-semibold text-six text-2xl max-md:text-[16px] hover:text-ninety transition-all duration-300 ease-out"
 						href={'/about'}
 					>
 						About
 					</Link>
 					<Link
-						className="font-semibold text-secondary text-2xl max-md:text-lg hover:text-terciary transition-all duration-300 ease-out"
+						className="font-semibold text-six text-2xl max-md:text-[16px] hover:text-ninety transition-all duration-300 ease-out"
 						href={'/projects'}
 					>
 						Projects
 					</Link>
 					<Link
-						className="font-semibold text-secondary text-2xl max-md:text-lg hover:text-terciary transition-all duration-300 ease-out"
+						className="font-semibold text-six text-2xl max-md:text-[16px] hover:text-ninety transition-all duration-300 ease-out"
 						href={'/articles'}
 					>
 						Articles
 					</Link>
 					<Link
-						className="font-semibold text-secondary text-2xl max-md:text-lg hover:text-terciary transition-all duration-300 ease-out"
+						className="font-semibold text-six text-2xl max-md:text-[16px] hover:text-ninety transition-all duration-300 ease-out"
 						href={'/contact'}
 					>
 						Contact
 					</Link>
 				</ul>
 				<div>
-					<p className="font-semibold text-fourty max-md:text-lg text-2xl pt-4">
+					<p className="font-semibold text-six/50 max-md:text-[16px] text-2xl pt-4">
 						Diseñado por Martín Camer
 					</p>
 				</div>

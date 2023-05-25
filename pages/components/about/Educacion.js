@@ -27,24 +27,22 @@ function Educacion() {
 					transition={{ duration: 0.5, type: 'spring' }}
 				>
 					<h3
-						className={
-							'capitalize font-bold text-3xl max-md:text-2xl text-secondary'
-						}
+						className={'capitalize font-bold text-3xl max-md:text-2xl text-six'}
 					>
 						{position}&nbsp;
 						<a
-							className={'text-terciary ml-2'}
+							className={'text-seventy/60 ml-2'}
 							href={companyLink}
 						>
 							@{company}
 						</a>
 					</h3>
-					<span className={'capitalize font-medium text-terciary'}>
+					<span className={'capitalize font-medium text-seventy'}>
 						{time} | {address}
 					</span>
 					<p
 						className={
-							'font-medium w-full text-fourty text-[18px] max-md:text-[16px]'
+							'font-medium w-full text-six text-[18px] max-md:text-[16px]'
 						}
 					>
 						{work}
@@ -60,7 +58,7 @@ function Educacion() {
 				<div>
 					<h1
 						className={
-							'text-7xl max-md:text-5xl text-secondary font-bold text-center'
+							'text-7xl max-md:text-5xl text-seventy font-bold text-center'
 						}
 					>
 						Educacion
@@ -73,7 +71,7 @@ function Educacion() {
 					<motion.div
 						style={{ scaleY: scrollYProgress }}
 						className={
-							'absolute left-9 max-md:left-0 top-0 w-[4px] h-full bg-fourty origin-top'
+							'absolute left-9 max-md:left-0 top-0 w-[4px] h-full bg-six/50 origin-top'
 						}
 					/>
 

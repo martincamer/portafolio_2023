@@ -12,7 +12,7 @@ function NextArrow({ onClick }) {
 					opacity: 0.5,
 				}}
 				className={
-					'bg-terciary text-secondary text-[18px] h-[50px] w-[50px] max-md:h-[40px] max-md:w-[40px] rounded-full grid place-items-center cursor-pointer'
+					'bg-seventy text-six text-[18px] h-[50px] w-[50px] max-md:h-[40px] max-md:w-[40px] rounded-full grid place-items-center cursor-pointer'
 				}
 			>
 				<BsChevronRight />

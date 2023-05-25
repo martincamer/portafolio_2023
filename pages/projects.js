@@ -4,7 +4,10 @@ import Proyectos from './components/projects/Proyectos';
 
 function projects() {
 	return (
-		<Layout pagina={'Projects'}>
+		<Layout
+			className="background"
+			pagina={'Projects'}
+		>
 			<div
 				className={
 					'container mx-auto max-md:px-4 w-full h-screen max-md:h-full'
@@ -13,19 +16,19 @@ function projects() {
 				<div className={'z-[1030] pt-[100px] max-md:pt-12 mb-16'}>
 					<div>
 						<AnimatedText
-							className={'h-2 bg-secondary w-36 mb-12'}
+							className={'h-2 bg-six w-36 mb-12 max-md:hidden'}
 						></AnimatedText>
 					</div>
 					<div>
 						<AnimatedText
-							className={
-								'text-7xl max-md:text-5xl text-secondary font-bold pb-3'
-							}
+							className={'text-7xl max-md:text-5xl text-six font-bold pb-3'}
 							text={'Proyectos'}
 						/>
 					</div>
 					<div>
-						<p className={'text-lg max-md:text-base text-fourty font-semibold'}>
+						<p
+							className={'text-lg max-md:text-base text-seventy font-semibold'}
+						>
 							Echa un vistazo a los últimos proyectos que he hecho.
 						</p>
 					</div>

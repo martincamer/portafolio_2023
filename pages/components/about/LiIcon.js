@@ -6,7 +6,7 @@ function LiIcon({ reference }) {
 		offset: ['center end', 'center center'],
 	});
 	return (
-		<figure className={'absolute left-0 max-md:left-[-28px] stroke-fourty'}>
+		<figure className={'absolute left-0 max-md:left-[-28px] stroke-six/90'}>
 			<svg
 				width="75"
 				height="75"
@@ -17,13 +17,13 @@ function LiIcon({ reference }) {
 					cx="75"
 					cy={'50'}
 					r={'20'}
-					className={'stroke-terciary stroke-[9px] fill-none'}
+					className={'stroke-seventy/90 stroke-[9px] fill-none'}
 				/>
 				<motion.circle
 					cx="75"
 					cy={'50'}
 					r={'20'}
-					className={'stroke-[5px] fill-fourty'}
+					className={'stroke-[5px] fill-five'}
 					style={{
 						pathLength: scrollYProgress,
 					}}
@@ -32,7 +32,7 @@ function LiIcon({ reference }) {
 					cx="75"
 					cy={'50'}
 					r={'10'}
-					className={'animate-pulse stroke-1 fill-secondary'}
+					className={'animate-pulse stroke-1 fill-ninety'}
 				/>
 			</svg>
 		</figure>

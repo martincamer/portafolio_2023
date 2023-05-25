@@ -19,3 +19,22 @@ slick-slide > div:nth-child(1) {
 .slick-list {
 	margin-right: 0px;
 }
+
+@layer base {
+	.background {
+		background: linear-gradient(60deg, #ab73ff, #5f20ff);
+		/* background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='500' preserveAspectRatio='none' viewBox='0 0 1440 500'%3e%3cg mask='url(%26quot%3b%23SvgjsMask2560%26quot%3b)' fill='none'%3e%3crect width='1440' height='500' x='0' y='0' fill='url(%23SvgjsLinearGradient2561)'%3e%3c/rect%3e%3cpath d='M 0%2c174 C 96%2c206.8 288%2c328.4 480%2c338 C 672%2c347.6 768%2c223.6 960%2c222 C 1152%2c220.4 1344%2c308.4 1440%2c330L1440 500L0 500z' fill='rgba(25%2c 40%2c 255%2c 1)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask2560'%3e%3crect width='1440' height='500' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='16.32%25' y1='-47%25' x2='83.68%25' y2='147%25' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient2561'%3e%3cstop stop-color='rgba(90%2c 92%2c 226%2c 1)' offset='0.26'%3e%3c/stop%3e%3cstop stop-color='rgba(49%2c 62%2c 255%2c 1)' offset='1'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e"); */
+
+		/* background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='600' height='300' preserveAspectRatio='none' viewBox='0 0 600 300'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1039%26quot%3b)' fill='none'%3e%3crect width='600' height='300' x='0' y='0' fill='rgba(90%2c 92%2c 226%2c 1)'%3e%3c/rect%3e%3cpath d='M0%2c236.074C43.678%2c240.367%2c78.527%2c203.018%2c117.492%2c182.822C161.007%2c160.268%2c220.944%2c154.775%2c242.129%2c110.577C263.293%2c66.423%2c225.81%2c16.979%2c220.305%2c-31.675C214.57%2c-82.367%2c247.073%2c-147.115%2c209.117%2c-181.201C169.682%2c-216.616%2c104.466%2c-167.682%2c53.33%2c-181.626C3.857%2c-195.117%2c-26.692%2c-272.906%2c-76.038%2c-258.961C-125.186%2c-245.072%2c-115.984%2c-167.664%2c-144.944%2c-125.595C-169.345%2c-90.149%2c-217.636%2c-74.042%2c-231.401%2c-33.27C-246.07%2c10.179%2c-246.7%2c62.843%2c-221.496%2c101.154C-196.754%2c138.764%2c-141.98%2c137.679%2c-103.532%2c161.099C-66.39%2c183.723%2c-43.281%2c231.82%2c0%2c236.074' fill='%232426cc'%3e%3c/path%3e%3cpath d='M600 531.802C649.244 536.144 709.574 560.1990000000001 745.182 525.907 782.534 489.935 746.143 423.51 763.2719999999999 374.56399999999996 777.96 332.594 832.168 310.341 836.119 266.051 840.229 219.981 819.137 170.688 784.1610000000001 140.423 750.219 111.053 700.031 117.56700000000001 655.787 110.00800000000001 617.092 103.39699999999999 577.685 85.047 540.944 98.87200000000001 504.839 112.457 491.624 155.226 464.014 182.167 433.012 212.417 385.477 226.762 368.875 266.769 350.952 309.959 353.331 361.255 371.881 404.179 390.587 447.46500000000003 429.238 478.654 470.39 501.677 509.899 523.781 554.903 527.825 600 531.802' fill='%239b9ced'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1039'%3e%3crect width='600' height='300' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e"); */
+		background-position: 70%;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	.primary {
+		color: rgb(0, 255, 234);
+	}
+	.secondary {
+		color: rgb(98, 0, 255);
+	}
+}
