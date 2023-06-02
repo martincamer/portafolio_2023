@@ -71,7 +71,7 @@ function articles() {
 									height={400}
 									alt=""
 									className="rounded-lg"
-									src={articulo.attributes.image.data[0].attributes.url}
+									src={articulo.attributes.image.data.attributes.url}
 								/>
 								<p className={'text-six font-semibold'}>
 									{articulo.attributes.sub_title}
