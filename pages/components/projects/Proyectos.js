@@ -43,7 +43,7 @@ function Proyectos() {
 							'rounded-t-lg h-[120px] max-md:h-[100px] w-full object-cover flex justify-center items-center'
 						}
 						alt=""
-						src={articulo.attributes.imagen.data[0].attributes.url}
+						src={articulo.attributes.imagen.data.attributes.url}
 					/>
 					<div className="px-4 py-4 flex flex-col items-center justify-center gap-y-3 h-full">
 						<div className={'flex flex-col '}>
