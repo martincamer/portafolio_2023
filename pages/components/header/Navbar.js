@@ -103,11 +103,6 @@ function Navbar() {
 							className="text-six text-[18px]"
 						/>
 						<CustomLink
-							href={'/articles'}
-							title="Articles"
-							className="text-six text-[18px]"
-						/>
-						<CustomLink
 							href={'/contact'}
 							title="Contact"
 							className="text-six text-[18px]"
@@ -208,11 +203,6 @@ function Navbar() {
 							<CustomLink
 								href={'/projects'}
 								title="Projects"
-								className="text-six text-[18px]"
-							/>
-							<CustomLink
-								href={'/articles'}
-								title="Articles"
 								className="text-six text-[18px]"
 							/>
 							<CustomLink

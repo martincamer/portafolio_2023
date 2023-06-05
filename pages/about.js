@@ -50,12 +50,12 @@ function about() {
 								className={'text-seventy font-semibold text-2xl max-md:text-lg'}
 							>
 								Empecé a trabajar como desarrollador después de terminar mis
-								estudios en Soy Henry - Bootcamp Full Stack en 2023, una
-								formación intensiva con más de 800 horas de estudio, donde
-								aprendí las últimas tecnologías del mercado, para convertirme en
-								Desarrollador Full Stack. Actualmente, estoy enfocado en el Full
-								Stack, y siempre sigo aprendiendo para estar al día con las
-								nuevas tecnologías.
+								estudios en la facultad como Desarollador de SoftWare, una
+								formación intensiva con más de 3 años de estudio y formacion
+								autodicata de mas de 1000 horas, donde aprendí las últimas
+								tecnologías del mercado, para convertirme en Desarrollador Full
+								Stack. Actualmente, estoy enfocado en el Full Stack, y siempre
+								sigo aprendiendo para estar al día con las nuevas tecnologías.
 							</p>
 						</div>
 

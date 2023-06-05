@@ -10,7 +10,7 @@ function projects() {
 		>
 			<div
 				className={
-					'container mx-auto max-md:px-4 w-full h-screen max-md:h-full'
+					'container mx-auto max-md:px-4 w-full h-full pb-20 max-md:pb-0'
 				}
 			>
 				<div className={'z-[1030] pt-[100px] max-md:pt-12 mb-16'}>

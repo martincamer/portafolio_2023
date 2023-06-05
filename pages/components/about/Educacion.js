@@ -77,13 +77,13 @@ function Educacion() {
 
 					<ul>
 						<Details
-							position={'Full Stack Bootcamp'}
+							position={'Desarollador de SoftWare'}
 							companyLink={'#'}
-							company={'Soy Henry'}
-							time={'2023'}
+							company={'Instituto Superior N7 Venado Tuerto'}
+							time={'2020'}
 							address={'2023'}
 							work={
-								'En este curso adquiri las habilidades como, html, css, javascript, react, redux, sass, tailwind, postgresql, node, express, next.'
+								'En este faculdad adquiri las habilidades como, html, css, javascript, react, sass, tailwind, mySQL, mongo DB, node, express, python, php, ppo.'
 							}
 						/>
 
@@ -94,7 +94,7 @@ function Educacion() {
 							time={'2022'}
 							address={'2023'}
 							work={
-								'Realice cursos como javascript, react, redux, mongodb, node, express, python, django'
+								'Realice cursos como javascript, react, redux, mongodb, node, express, python, django, java, spring boot, php, laravel, c#, .net framework.'
 							}
 						/>
 
@@ -105,7 +105,7 @@ function Educacion() {
 							time={'2020'}
 							address={'2023'}
 							work={
-								'En la plataforma realice cursos de los profesores,Codigo Juan, Fernando Herrera,Hector Costa Guzman. Adquiri habilidades como javascript, react, redux, vue, python, django, node, express, nest, angular, flutter, react native, wordpress, dart. '
+								'En la plataforma realice cursos de los profesores,Codigo Juan, Fernando Herrera,Hector Costa Guzman. Adquiri habilidades como javascript, react, redux, vue y nuxt, python y django, node ,express y nest, flutter, react native, wordpress, java y spring boot, php y laravel, mongoDB, mySQL, postgreSQL.'
 							}
 						/>
 					</ul>

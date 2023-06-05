@@ -90,9 +90,9 @@ function Experencia() {
 						<Details
 							position={'Front End Developer'}
 							companyLink={'#'}
-							company={'Nextart Design'}
+							company={'Open Sistemas'}
 							time={'2021-2022'}
-							address={'Venado Tuerto, Santa Fe'}
+							address={'Remoto'}
 							work={
 								'Trabaje como parte del equipo utilizando metodologías agiles, Desarrolle Aplicaciones.Tecnologías: ReactJs, React redux toolkit, React hook form, React router dom, React hot toast, Sass,Tailwind, Material ui, Axios.'
 							}
@@ -101,9 +101,9 @@ function Experencia() {
 						<Details
 							position={'FrontEnd Freelancer'}
 							companyLink={'#'}
-							company={'Erveries'}
+							company={'Remoto'}
 							time={'2020-2021'}
-							address={'Remote'}
+							address={'Remoto'}
 							work={
 								'Trabajo como parte del equipo utilizando metodologías agiles SCRUM, Desarrolle Aplicaciones web, mobiles.- Tecnologías: ReactJs, React redux toolkit, React hook form, React router dom, React hot toast, Sass,Tailwind, Material ui, Axios.'
 							}
