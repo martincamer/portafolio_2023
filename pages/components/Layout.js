@@ -18,6 +18,11 @@ function Layout({ children, pagina, className = '' }) {
 					type="text/css"
 					href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
 				/>
+				<script
+					async
+					src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1126139209868956"
+					crossorigin="anonymous"
+				></script>
 				<title>Martin Camer - {pagina}</title>
 			</Head>
 			{children}
